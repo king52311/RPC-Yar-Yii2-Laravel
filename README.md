@@ -41,3 +41,20 @@ then you use : Yii::$app->params['rpc']['host']['demo1'];
 * app\Rpc                               //RPC Lib Class
 * app\Http\Controllers\ApiController   //Client Demo Controller
 #### 2) step 2.
+* config\rpc.php 
+```
+return [
+    'host' => [
+        'demo1' => env('RPC_DEMO1_HOST', 'http://host1/rpc/'),
+        'demo1' => env('RPC_DEMO2_HOST', 'http://host2/rpc/'),
+        'demo1' => env('RPC_DEMO3_HOST', 'http://host3/rpc/'),
+    ],
+];
+
+```
+```
+then you use : config('rpc.rpc_host.demo1');
+```
+#### 2) step 3.
+* client request http://host/api/sync-video-download-info
+* server response http://host/rpc
