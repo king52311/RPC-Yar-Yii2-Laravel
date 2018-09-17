@@ -30,8 +30,8 @@ then you use : Yii::$app->params['rpc']['host']['demo1'];
 ```
 
 #### 2) step 3.
-* client请求 http://host/api/sync-video-download-info
-* server接收 http://host/rpc
+* client request http://host/api/sync-video-download-info
+* server response http://host/rpc
 
 ### laravel framework
 
