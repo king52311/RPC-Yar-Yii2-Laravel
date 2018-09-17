@@ -36,5 +36,8 @@ then you use : Yii::$app->params['rpc']['host']['demo1'];
 ### laravel framework
 
 #### 1) step 1.
-
+* routes\rpc                             //RPC routes Class 
+* app\Providers\RouteServiceProvider    //RPC routes used
+* app\Rpc                               //RPC Lib Class
+* app\Http\Controllers\ApiController   //Client Demo Controller
 #### 2) step 2.
