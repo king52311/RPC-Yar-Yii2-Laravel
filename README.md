@@ -1,16 +1,24 @@
 # RPC-Yar-Yii2-Laravel
 use Yar for Yii2 and Laravel
 
-## RPC调用说明
+### Installation 
 
-### YII框架
+### step 1.
+#### 1) install php-yar extend：you can get the github source here https://github.com/laruence/yar.git
 
-#### 1) 布局文件
-* common\rpc  RPC类文件
-* frontend\controllers\ApiController    调用接口文件
-* frontend\controllers\RpcController    服务端接口文件
-* frontend\models\demoModel          调用model方法文件
+### YII framework
 
-#### 2) 调用规则
+#### 1) step 1. 
+* common\rpc  RPC Lib Class
+* frontend\controllers\ApiController    Client Demo Controller
+* frontend\controllers\RpcController    Server Demo Controller
+* frontend\models\demoModel             Server Model Method for Client
+
+#### 2) step 2.
 * client请求 http://host/api/sync-video-download-info
 * server接收 http://host/rpc
+
+### laravel framework
+#### 1) step 1.
+
+#### 2) step 2.
