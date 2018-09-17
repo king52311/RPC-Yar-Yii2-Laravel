@@ -14,14 +14,14 @@ class RpcClient extends RpcBase
 
     public static function getClient(array $condition)
     {
-        if (config('rpc.rpc_host')) {
+        if (config('rpc.rpc_host.demo1')) {
             return 'please set params rpc_host';
         }
 
         error_reporting(E_ERROR);
         //ini_set("yar.debug",'on');
         $defult = [
-            'url' => config('rpc.rpc_host'), //服务器URL
+            'url' => config('rpc.rpc_host.demo1'), //服务器URL
             'class' => '', //class名称
         ];
         $condition = array_merge($defult, $condition);
