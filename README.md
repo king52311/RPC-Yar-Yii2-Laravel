@@ -9,16 +9,32 @@ use Yar for Yii2 and Laravel
 ### YII framework
 
 #### 1) step 1. 
-* common\rpc  RPC Lib Class
-* frontend\controllers\ApiController    Client Demo Controller
-* frontend\controllers\RpcController    Server Demo Controller
-* frontend\models\demoModel             Server Model Method for Client
+* common\rpc  //RPC Lib Class
+* frontend\controllers\ApiController    //Client Demo Controller
+* frontend\controllers\RpcController    //Server Demo Controller
+* frontend\models\demoModel             //Server Model Method for Client
 
 #### 2) step 2.
+* config\params.php 
+```
+'rpc' => [
+        'host'=>[
+            'demo1'=>'http://host1/rpc',
+            'demo2'=>'http://host2/rpc',
+            'demo3'=>'http://host3/rpc',
+        ]
+    ],
+```
+```
+then you use : Yii::$app->params['rpc']['host']['demo1'];
+```
+
+#### 2) step 3.
 * client请求 http://host/api/sync-video-download-info
 * server接收 http://host/rpc
 
 ### laravel framework
+
 #### 1) step 1.
 
 #### 2) step 2.
